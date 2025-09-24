@@ -1,0 +1,164 @@
+/* ===== GLOBAL STYLES ===== */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111; /* black background */
+  color: #fff; /* white text */
+  line-height: 1.6;
+}
+
+title {
+  color: #ff0000; /* red titles */
+  text-align: center;
+
+}
+
+h1 {
+    color: #000; 
+    text-align: center;
+    text-decoration: solid;
+    font-size: 30px;
+}
+
+h2, h3 {
+  color: #f5f5f5;
+  margin-bottom: 10px;
+
+}
+
+p, li, label {
+  color: #ddd;
+}
+
+a {
+  color: #ff4500; /* orange-red links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+header {
+  background: #000;
+  padding: 15px 20px;
+  border-bottom: 2px solid #ff0000; /* red accent line */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  background-color: #ff0000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  color: #fff;
+  padding: 6px 12px;
+  background: #222;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #ff0000;
+}
+
+/* ===== SECTIONS ===== */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1c1c1c;
+  border-radius: 8px;
+}
+
+blockquote {
+  background: #333;
+  border-left: 4px solid #ff0000;
+  margin: 10px 0;
+  padding: 10px;
+  font-style: italic;
+}
+
+/* ===== FORMS ===== */
+form {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  max-width: 500px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+}
+
+button {
+  background: #ff0000; /* red buttons */
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+/* ===== IMAGES ===== */
+img {
+  margin: 10px 0;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  align-items: center;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000;
+  border-top: 2px solid #ff0000;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  input, textarea, select {
+    max-width: 100%;
+  }
+}
