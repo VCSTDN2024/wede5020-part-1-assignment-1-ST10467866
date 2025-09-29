@@ -6,35 +6,65 @@
   <title>Lady Leah’s Transport</title>
   <link rel="styleSheet" href="CSS/styleSheet.css">
 </head>
-<nav>
+<header>
+    <h1>Lady Leah's Transportation</h1>
+      <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="freefreightAnly.html">Free Freight Analysis</a></li>
-        <li><a href="courierLoc.html">Courier Locator</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About Us</a></li>
+        <li><a href="services.html" target="_blank">Services</a></li>
+        <li><a href="freefreightAnly.html" target="_blank">Free Freight Analysis</a></li>
+        <li><a href="courierLoc.html" target="_blank">Courier Locator</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
       </ul>
     </nav>
+  </header> 
+     <div class="title-row"> 
     <img src="Icons/freefreightAnly.png" alt="Freight analysis process" width="400">
+    <h2>Free Freight Analysis</h2>
+    </div>
 <body>
-  <header>
-    <h1>Free Freight Analysis</h1>
-  </header>
+  
   <main>
-    <form>
-      <label for="business">Business Name:</label>
-      <input type="text" id="business"><br><br>
-
-      <label for="shipment">Shipment Details:</label>
-      <textarea id="shipment"></textarea><br><br>
-
-      <label for="upload">Upload Shipment File:</label>
-      <input type="file" id="upload"><br><br>
-
-      <button type="submit">Request Analysis</button>
-    </form>
+    <form class="mini-form">
+    <h3>Request a Free Freight Analysis</h3>
+    <label>Full Name:
+      <input type="text" placeholder="Enter your name">
+    </label>
+    <label>Email Address:
+      <input type="email" placeholder="Enter your email">
+    </label>
+    <label>Company Name:
+      <input type="text" placeholder="Optional">
+    </label>
+    <label>Average Monthly Shipments:
+      <select>
+        <option>Less than 50</option>
+        <option>50 – 200</option>
+        <option>200 – 500</option>
+        <option>More than 500</option>
+      </select>
+    </label>
+    <button class="btn">Submit Request</button>
+  </form>
     <img src="Icons/freefreightAnly.png" alt="Freight analysis process" width="400">
+
+    <section>
+    <h3>Why Choose Our Freight Analysis?</h3>
+    <ul>
+      <li>✔ Identify hidden costs in your logistics</li>
+      <li>✔ Compare rates with industry benchmarks</li>
+      <li>✔ Receive a customized cost-saving plan</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+  </footer>
+
   </main>
 </body>
 </html>

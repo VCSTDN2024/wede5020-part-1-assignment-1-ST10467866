@@ -7,30 +7,63 @@
   <link rel="styleSheet" href="CSS/styleSheet.css">
 </head>
 <body>
+  <header>
+    <h1>Lady Leah's Transportation</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="freefreightAnly.html">Free Freight Analysis</a></li>
-        <li><a href="courierLoc.html">Courier Locator</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About Us</a></li>
+        <li><a href="services.html" target="_blank">Services</a></li>
+        <li><a href="freefreightAnly.html" target="_blank">Free Freight Analysis</a></li>
+        <li><a href="courierLoc.html" target="_blank">Courier Locator</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
       </ul>
     </nav>
-    <img src="Icons/courier.png" alt="Courier locator" width="400"> 
-  <header>
-    <h1>Courier Locator</h1>
   </header>
+     <div class="title-row"> 
+      <img src="Icons/courierLoc.png" alt="Courier locator" width="400"> 
+      <h2>Courier Locator</h2>
+      </div>
+
   <main>
-    <form>
-      <label for="tracking">Enter Tracking ID:</label>
-      <input type="text" id="tracking">
-      <button type="submit">Track</button>
-    </form>
+    <form class="mini-form">
+    <h3>Search for a Courier Location</h3>
+    <label>Enter your area/suburb:
+      <input type="text" placeholder="e.g. Sandton, Soweto">
+    </label>
+    <button class="btn">Search</button>
+  </form>
+
+  <section class="location-list">
+    <h3>Popular Drop-Off Points</h3>
+    <ul>
+      <li><strong>Sandton:</strong> 45 Rivonia Road – Business Hub</li>
+      <li><strong>Randburg:</strong> 22 Malibongwe Drive – Courier Depot</li>
+      <li><strong>Soweto:</strong> 19 Vilakazi Street – Local Agent</li>
+      <li><strong>Pretoria CBD:</strong> 89 Church Street – Main Office</li>
+    </ul>
+  </section>
+
+   <section>
+    <h3>Operating Hours</h3>
+    <p>Monday – Friday: 7:00 AM – 7:00 PM<br>
+       Saturday: 8:00 AM – 3:00 PM<br>
+       Sunday & Public Holidays: Closed</p>
+  </section>
+
     <section>
       <h2>Delivery Progress</h2>
       <img src="images/map-tracking.jpg" alt="Map showing parcel delivery progress" width="500">
     </section>
+
+     <footer>
+    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+  </footer>
+  <footer>
+    <p>&copy; 2025 Lady Leah’s Transport. All rights reserved.</p>
   </main>
 </body>
 </html>

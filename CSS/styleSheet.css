@@ -15,8 +15,21 @@ title {
 
 }
 
+.title-row {
+  display: flex;
+  align-items: center;   /* vertically align icon & text */
+  justify-content: center; /* center them horizontally */
+  gap: 15px;             /* space between image and heading */
+  margin: 20px 0;
+}
+
+.title-row h2 {
+  margin: 0;
+}
+
+
 h1 {
-    color: #000; 
+    color: #fff; 
     text-align: center;
     text-decoration: solid;
     font-size: 30px;
@@ -129,6 +142,8 @@ button {
   align-items: center;
 }
 
+
+
 button:hover {
   background: #cc0000;
 }
@@ -136,7 +151,7 @@ button:hover {
 /* ===== IMAGES ===== */
 img {
   margin: 10px 0;
-  max-width: 100%;
+  max-width: 120px;
   height: auto;
   border-radius: 6px;
   align-items: center;
