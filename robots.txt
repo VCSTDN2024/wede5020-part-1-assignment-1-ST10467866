@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ladyleahs.co.za/sitemap.xml
