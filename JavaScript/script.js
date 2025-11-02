@@ -37,3 +37,11 @@ search.addEventListener('keyup', () => {
     service.style.display = service.textContent.toLowerCase().includes(term) ? '' : 'none';
   });
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = document.getElementById('contactEmail').value;
+  const response = document.getElementById('contactResponse');
+  response.textContent = `Thank you! Your message has been sent to info@ladyleahs.co.za.`;
+});
+

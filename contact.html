@@ -27,22 +27,15 @@
     </div>
  
   <main>
-   <form class="mini-form">
-    <h3>Send Us a Message</h3>
-    <label>Full Name:
-      <input type="text" placeholder="Enter your name">
-    </label>
-    <label>Email Address:
-      <input type="email" placeholder="Enter your email">
-    </label>
-    <label>Subject:
-      <input type="text" placeholder="Enter subject">
-    </label>
-    <label>Your Message:
-      <textarea placeholder="Write your message here"></textarea>
-    </label>
-    <button class="btn">Send Message</button>
-  </form>
+   <form id="contactForm">
+  <input type="text" id="fullName" placeholder="Your Name" required>
+  <input type="email" id="contactEmail" placeholder="Your Email" required>
+  <textarea id="messageText" placeholder="Type your message..." required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<p id="contactResponse"></p>
+
 
   section>
     <h3>Our Office</h3>
