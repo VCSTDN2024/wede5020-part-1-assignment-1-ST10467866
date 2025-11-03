@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lady Leah’s Transport</title>
-  <link rel="styleSheet" href="CSS/styleSheet.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courier Locator — Lady Leah’s Transport</title>
+  <meta name="description" content="Find your nearest Lady Leah’s drop-off point or track live courier locations (map placeholder ready)." />
+  <link rel="stylesheet" href="CSS/styleSheet.css" />
+  <!-- Leaflet (optional) - you'll add this to integrate a live map later -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> -->
+  <script defer src="JS/script.js"></script>
 </head>
 <body>
   <header>
-    <h1>Lady Leah's Transportation</h1>
+    <h1>Lady Leah’s Transport</h1>
     <nav>
-      <ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="about.html" target="_blank">About Us</a></li>
-        <li><a href="services.html" target="_blank">Services</a></li>
-        <li><a href="freefreightAnly.html" target="_blank">Free Freight Analysis</a></li>
-        <li><a href="courierLoc.html" target="_blank">Courier Locator</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="freefreightAnly.html">Free Freight Analysis</a></li>
+        <li><a href="courierLoc.html" class="active">Courier Locator</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-     <div class="title-row"> 
-      <img src="Icons/courierLoc.png" alt="Courier locator" width="400"> 
-      <h2>Courier Locator</h2>
-      </div>
 
   <main>
-    <form class="mini-form">
-    <h3>Search for a Courier Location</h3>
-    <label>Enter your area/suburb:
-      <input type="text" placeholder="e.g. Sandton, Soweto">
-    </label>
-    <button class="btn">Search</button>
-  </form>
-
-  <section class="location-list">
-    <h3>Popular Drop-Off Points</h3>
-    <ul>
-      <li><strong>Sandton:</strong> 45 Rivonia Road – Business Hub</li>
-      <li><strong>Randburg:</strong> 22 Malibongwe Drive – Courier Depot</li>
-      <li><strong>Soweto:</strong> 19 Vilakazi Street – Local Agent</li>
-      <li><strong>Pretoria CBD:</strong> 89 Church Street – Main Office</li>
-    </ul>
-  </section>
-
-   <section>
-    <h3>Operating Hours</h3>
-    <p>Monday – Friday: 7:00 AM – 7:00 PM<br>
-       Saturday: 8:00 AM – 3:00 PM<br>
-       Sunday & Public Holidays: Closed</p>
-  </section>
-
     <section>
-      <h2>Delivery Progress</h2>
-      <img src="images/map-tracking.jpg" alt="Map showing parcel delivery progress" width="500">
-      <div id="map" style="height:400px;"></div>
-
+      <div class="title-row">
+        <img src="Icons/courierLoc.png" alt="Location icon" />
+        <h2>Courier Locator & Tracking</h2>
+      </div>
+      <p>Search our drop-off points, view operating hours and, coming soon — live courier locations.</p>
     </section>
 
-     <footer>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-  </footer>
+    <!-- SEARCH + HUBS -->
+    <section>
+      <h3>Search a Drop-Off Point</h3>
+      <form id="locatorForm" class="mini-form" aria-label="Find drop-off">
+        <label for="suburb">Enter suburb or area</label>
+        <input id="suburb" name="suburb" type="text" placeholder="e.g. Sandton, Soweto" />
+        <button class="btn" type="submit">Search</button>
+      </form>
+
+      <h3>Popular Drop-Off Points</h3>
+      <ul class="location-list">
+        <li><strong>Sandton:</strong> 45 Rivonia Road — Business Hub</li>
+        <li><strong>Randburg:</strong> 22 Malibongwe Drive — Courier Depot</li>
+        <li><strong>Soweto:</strong> 19 Vilakazi Street — Local Agent</li>
+        <li><strong>Pretoria CBD:</strong> 89 Church Street — Main Office</li>
+      </ul>
+    </section>
+
+    
+    <section class="map-section">
+  <h2>Track Our Couriers</h2>
+  <p>Our delivery vehicles operate throughout Johannesburg and Pretoria. View our service zone below.</p>
+
+  <div class="map-container">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.75890675448!2d27.95762220855284!3d-26.171498044340073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1762173816163!5m2!1sen!2sza" 
+     width="100%" 
+      height="400" 
+      style="border:0; border-radius: 10px;"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+    <!-- TRACKING -->
+    <section>
+      <h3>Track by Tracking ID</h3>
+      <form id="trackForm" class="mini-form" aria-label="Parcel tracking">
+        <label for="trackingId">Enter Tracking ID</label>
+        <input id="trackingId" name="trackingId" type="text" placeholder="e.g. LLT-2025-000123" />
+        <button class="btn" type="submit">Track</button>
+      </form>
+      <div id="trackResult" aria-live="polite"></div>
+    </section>
+
+    <!-- HOURS & CONTACT -->
+    <section>
+      <h3>Operating Hours & Support</h3>
+      <p>Mon–Fri: 07:00 – 19:00 | Sat: 08:00 – 15:00 | Sun & Public Holidays: Closed</p>
+      <p>For urgent issues call: <a href="tel:+27111234567">+27 11 123 4567</a></p>
+    </section>
+  </main>
+
   <footer>
     <p>&copy; 2025 Lady Leah’s Transport. All rights reserved.</p>
-  </main>
+  </footer>
 </body>
 </html>

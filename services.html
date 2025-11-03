@@ -3,116 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lady Leah’s Transport</title>
-    <link rel="styleSheet" href="CSS/styleSheet.css">
+  <title>Our Services | Lady Leah’s Transport</title>
+  <meta name="description" content="Explore our full range of delivery and transport services — same-day, overnight, bulk, and corporate logistics solutions.">
+  <link rel="stylesheet" href="CSS/styleSheet.css">
+  <script defer src="JS/script.js"></script>
 </head>
+
 <body>
   <header>
-    <h1>Lady Leah's Transportation</h1>
+    <h1>Lady Leah’s Transport</h1>
     <nav>
-      <ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="about.html" target="_blank">About Us</a></li>
-        <li><a href="services.html" target="_blank">Services</a></li>
-        <li><a href="freefreightAnly.html" target="_blank">Free Freight Analysis</a></li>
-        <li><a href="courierLoc.html" target="_blank">Courier Locator</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="freefreightAnly.html">Free Freight Analysis</a></li>
+        <li><a href="courierLoc.html">Courier Locator</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-      <div class="title-row">
-    <img src="Icons/services.png" alt="Services overview" width="400">
-    <h2>Our Services</h2>
-    </div>
-
-     <div class="services-grid">
-    <div>
-      <h3>Same-day Delivery</h3>
-      <p>Urgent parcels delivered within hours across Johannesburg and Pretoria.</p>
-      <ul>
-        <li>Guaranteed delivery the same day</li>
-        <li>Real-time tracking available</li>
-        <li>Ideal for legal, medical, and urgent business needs</li>
-      </ul>
-    </div>
-    
-
 
   <main>
+    <!-- INTRO -->
     <section>
-      <h2>What We Offer</h2>
-      <div>
-      <h3>Overnight Delivery</h3>
-      <p>Next-day guaranteed delivery for less urgent packages.</p>
-      <ul>
-        <li>Delivered by 10 AM the following day</li>
-        <li>Secure packaging options</li>
-        <li>Perfect for inter-office transfers</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Bulk Transport</h3>
-      <p>Cost-effective solutions for large shipments and heavy goods.</p>
-      <ul>
-        <li>Flexible fleet for all load sizes</li>
-        <li>Affordable rates for bulk deliveries</li>
-        <li>Warehousing available on request</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Corporate Solutions</h3>
-      <p>Tailored logistics for businesses of all sizes.</p>
-      <ul>
-        <li>Monthly contracts with reduced rates</li>
-        <li>Dedicated account manager</li>
-        <li>Priority delivery options</li>
-      </ul>
-    </div>
-  </div>
+      <div class="title-row">
+        <img src="Icons/services.png" alt="Service icon">
+        <h2>Our Logistics Solutions</h2>
+      </div>
+      <p>Lady Leah’s Transport offers a full spectrum of delivery and logistics services for businesses and individuals. 
+      Whether you need a small package delivered across town or a bulk shipment handled with care, we have the right solution for you.</p>
     </section>
 
-    <section>
-      <h2>Pricing Estimate</h2>
-      <form>
-        <label for="service">Select Service:</label>
-        <select id="service">
-          <option>Same-day Delivery</option>
-          <option>Overnight Delivery</option>
-          <option>Bulk Transport</option>
-          <option>Corporate Solutions</option>
-        </select>
-        <button type="submit">Estimate</button>
-      </form>
+    <!-- ===== ACCORDION SECTION ===== -->
+    <section class="accordion-section">
+      <h3>Explore Our Services</h3>
+
+      <button class="accordion">Same-Day Delivery</button>
+      <div class="panel">
+        <p>Our express courier service ensures your packages are picked up and delivered within the same day across Gauteng. 
+        Ideal for time-sensitive deliveries with real-time tracking and live driver updates.</p>
+      </div>
+
+      <button class="accordion">Overnight Delivery</button>
+      <div class="panel">
+        <p>Perfect for businesses needing documents, parts, or goods delivered by the next morning. 
+        We guarantee safe handling, priority dispatch, and optional insurance coverage for high-value items.</p>
+      </div>
+
+      <button class="accordion">Bulk Transport</button>
+      <div class="panel">
+        <p>Our fleet of trucks and vans can handle large-volume deliveries, warehouse transfers, and regional stock distribution. 
+        Each shipment is planned with optimized routes to minimize cost and carbon footprint.</p>
+      </div>
+
+      <button class="accordion">Corporate Solutions</button>
+      <div class="panel">
+        <p>Tailored delivery plans for companies requiring regular courier services. Includes dedicated account managers, 
+        tracking dashboards, and scheduled invoice systems for convenience.</p>
+      </div>
+
+      <button class="accordion">Specialized Transport</button>
+      <div class="panel">
+        <p>We offer temperature-controlled and fragile-goods transport for sensitive items such as medical supplies, food, and glass products. 
+        Every delivery is monitored and logged for accuracy and compliance.</p>
+      </div>
+
+      <button class="accordion">Community & Charity Deliveries</button>
+      <div class="panel">
+        <p>As part of our social responsibility, we partner with local charities and NGOs to support community drives, 
+        food parcel deliveries, and outreach initiatives at discounted rates.</p>
+      </div>
     </section>
 
-    <section class="faq-section">
-  <h2>Frequently Asked Questions</h2>
-  <div class="accordion">
-    <button class="accordion-btn">What areas do you deliver to?</button>
-    <div class="accordion-content">
-      <p>We deliver across Gauteng including Johannesburg, Pretoria, and surrounding areas.</p>
-    </div>
+    <!-- WHY CHOOSE -->
+    <section>
+      <h3>Why Choose LLT?</h3>
+      <ul>
+        <li>✔ Advanced GPS Tracking and route optimization</li>
+        <li>✔ Affordable pricing with no hidden costs</li>
+        <li>✔ Friendly, professional drivers</li>
+        <li>✔ Insurance options available for high-value items</li>
+        <li>✔ 24/7 Customer Support and Live Chat</li>
+      </ul>
+    </section>
 
-    <button class="accordion-btn">How long does delivery take?</button>
-    <div class="accordion-content">
-      <p>Same-day and overnight delivery options are available depending on your location.</p>
-    </div>
-
-    <button class="accordion-btn">Do you transport bulk orders?</button>
-    <div class="accordion-content">
-      <p>Yes, we provide special pricing for bulk orders and corporate deliveries.</p>
-    </div>
-  </div>
-</section>
-
-     <footer>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-    <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-  </footer>
-
+    <!-- CTA -->
+    <section class="cta">
+      <h3>Ready to Ship?</h3>
+      <p>Book your delivery today and experience the Lady Leah’s difference.</p>
+      <a href="contact.html" class="btn">Book a Delivery</a>
+    </section>
   </main>
 
+  <footer>
+    <div class="socials">
+      <a href="#"><img src="Icons/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="Icons/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="Icons/instagram.png" alt="Instagram" /></a>
+      <a href="#"><img src="Icons/youtube.png" alt="YouTube" /></a>
+    </div>
+    <p>&copy; 2025 Lady Leah’s Transport. All rights reserved.</p>
+  </footer>
 </body>
 </html>
